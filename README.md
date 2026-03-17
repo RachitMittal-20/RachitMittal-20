@@ -81,21 +81,21 @@ const rachit = {
 
 <!-- ─── GITHUB STATS ─────────────────────────────────────── -->
 ## 📊 &nbsp;GitHub Stats
-
+ 
 <div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RachitMittal-20&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true" alt="Rachit's GitHub Stats"/>
+ 
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=RachitMittal-20&show_icons=true&bg_color=0d1117&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&border_color=30363d&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="Rachit's GitHub Stats"/>
 &nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RachitMittal-20&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top Languages"/>
-
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RachitMittal-20&layout=compact&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d&hide_border=true&langs_count=8" alt="Top Languages"/>
+ 
 </div>
-
+ 
 <div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=RachitMittal-20&theme=github-dark-blue&hide_border=true" alt="GitHub Streak"/>
-
+ 
+<img src="https://streak-stats.demolab.com?user=RachitMittal-20&theme=github-dark-blue&hide_border=true&date_format=j%20M%5B%20Y%5D&stroke=1f6feb&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak"/>
+ 
 </div>
-
+ 
 <br/>
 
 <!-- ─── ACTIVITY GRAPH ─────────────────────────────────── -->
