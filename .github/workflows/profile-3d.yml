@@ -1,0 +1,32 @@
+# Place at: .github/workflows/profile-3d.yml  (inside the RachitMittal-20/RachitMittal-20 repo)
+# Generates the 3D contribution graph SVGs into ./profile-3d-contrib/ and commits them.
+name: GitHub-Profile-3D-Contrib
+
+on:
+  schedule:
+    - cron: "30 21 * * *"   # 21:30 UTC = 03:00 IST — regenerates nightly
+  workflow_dispatch:         # lets you run it manually from the Actions tab (needed the first time)
+
+permissions:
+  contents: write            # the job commits the generated SVGs back to this repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v5
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          # Default token = public activity only. To count private-repo activity too,
+          # add a PAT as a secret (e.g. MY_PAT) and use ${{ secrets.MY_PAT }} here.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "chore: regenerate 3D contribution graph"; then
+            git push
+          fi
